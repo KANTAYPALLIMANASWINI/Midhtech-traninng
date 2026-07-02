@@ -1,0 +1,25 @@
+body{
+    margin:0;
+    padding:0;
+    background:#f4f4f4;
+    font-family:Arial, sans-serif;
+}
+
+.container{
+    width:600px;
+    margin:60px auto;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    
+}
+
+h1{
+    text-align:center;
+    color:darkblue;
+}
+
+h3{
+    color:green;
+}
+
