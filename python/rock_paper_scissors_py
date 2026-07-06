@@ -1,0 +1,14 @@
+import random
+game = ["rock", "paper", "scissor"]
+choice1 = input("Enter rock, paper, scissor: ")
+Robot_choice = random.choice(game)
+print("Your choice: ", choice1)
+print("Robot_choice: ", Robot_choice)
+if choice1 not in game:
+    print("Invalid choice")
+elif choice1 == Robot_choice:
+    print("It is a Tie")
+elif(choice1 == "rock" and Robot_choice == "scissor") or (choice1 == "paper" and Robot_choice == "rock") or (choice1 == "scissor" and Robot_choice == "paper"):
+    print("YOU WIN!")
+else:
+    print("COMPUTER WINS!")
