@@ -1,21 +1,14 @@
-choice = input("Enter SI for Simple Interest or CI for Compound Interest: ")
+# Compound Interest Calculator
 
-principal = float(input("Enter Principal Amount: "))
-time = float(input("Enter Time (Years): "))
+p = float(input("Enter the Principal Amount: "))
+r = float(input("Enter the Rate of Interest: "))
+t = float(input("Enter the Time (in years): "))
 
-if choice == "SI":
-    simple_interest = (principal * 2 * time) / 100
-    total = principal + simple_interest
+# Calculate Amount
+amount = p * (1 + r / 100) ** t
 
-    print("Simple Interest =", simple_interest)
-    print("Total Amount =", total)
+# Calculate Compound Interest
+ci = amount - p
 
-elif choice == "CI":
-    amount = principal * (1 + 2 / 100) ** time
-    compound_interest = amount - principal
-
-    print("Compound Interest =", compound_interest)
-    print("Total Amount =", amount)
-
-else:
-    print("Invalid Choice")
+print("Compound Interest =", round(ci, 2))
+print("Total Amount =", round(amount, 2))
