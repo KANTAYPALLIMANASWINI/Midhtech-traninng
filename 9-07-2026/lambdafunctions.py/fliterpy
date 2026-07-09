@@ -1,0 +1,15 @@
+numbers = [1, 2, 3, 4, 5, 6]  #lambda functions
+
+result = list(filter(lambda x: x % 2 == 0, numbers))
+
+print(result)
+
+#normal functions
+def even(x):
+    return x % 2 == 0
+
+numbers = [1, 2, 3, 4, 5, 6]
+
+result = list(filter(even, numbers))
+
+print(result)
